@@ -7,11 +7,34 @@ app.get(`/`, (req, res) => {
         <html>
             <head>
                 <title>My Express App</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                    }
+                    .center-box {
+                        width: 50%;
+                        height: 300px;
+                        margin: 100px auto;
+                        background-color: #ddd9d9;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        padding: 20px;
+                        box-sizing: border-box;
+                    }
+                    h1 {
+                        color: red;
+                        margin-bottom: 10px;
+                    }
+                </style>
             </head>
-            <body >
-                <div style="text-align: center; font-family: Arial; width: 45%; height: 20%; background-color: #ddd9d9ff; margin-left: 500px;">
-                    <h1 style="color: red;">Server Under Maintenance</h1>
-                    <p>We are currently performing scheduled maintenance. We apologize for any inconvenience this may cause.</p>
+            <body>
+                <div class="center-box">
+                    <h1>Server Under Maintenance</h1>
+                    <p>We are currently performing scheduled maintenance.</p>
+                    <p>We apologize for any inconvenience this may cause.</p>
                     <p>Please check back later.</p>
                     <p>Thank you for your patience!</p>
                 </div>
@@ -23,4 +46,3 @@ app.get(`/`, (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
-
