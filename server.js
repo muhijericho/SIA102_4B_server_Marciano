@@ -6,48 +6,43 @@ app.get(`/`, (req, res) => {
     res.send(`
         <html>
             <head>
-                <title>Maintenance Mode</title>
+                <title>Maintenance</title>
                 <style>
                     body {
                         margin: 0;
-                        padding: 0;
                         height: 100vh;
-                        background: linear-gradient(to bottom right, #2c3e50, #3498db);
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-family: Arial, sans-serif;
+                        background-color: #f0f0f0;
+                    }
+                    .container {
+                        background-color: #333;
                         color: white;
-                    }
-
-                    .box {
-                        background-color: rgba(0, 0, 0, 0.6);
-                        padding: 60px 80px;
-                        border-radius: 20px;
-                        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+                        padding: 40px;
+                        border-radius: 12px;
                         text-align: center;
-                        max-width: 800px;
+                        width: 400px;
                     }
-
                     h1 {
-                        font-size: 48px;
+                        font-size: 36px;
                         margin-bottom: 20px;
-                        color: #ff4d4d;
+                        color: #ff4444;
                     }
-
                     p {
-                        font-size: 20px;
-                        line-height: 1.6;
+                        font-size: 18px;
+                        line-height: 1.4;
                     }
                 </style>
             </head>
             <body>
-                <div class="box">
-                    <h1>🚧 Maintenance In Progress 🚧</h1>
-                    <p>We're working hard to improve your experience.</p>
-                    <p>The system is currently undergoing scheduled maintenance.</p>
-                    <p>We appreciate your patience and understanding.</p>
-                    <p>Please come back soon!</p>
+                <div class="container">
+                    <h1>Server Under Maintenance</h1>
+                    <p>We are currently performing scheduled maintenance.</p>
+                    <p>We apologize for any inconvenience this may cause.</p>
+                    <p>Please check back later.</p>
+                    <p>Thank you for your patience!</p>
                 </div>
             </body>
         </html>
@@ -55,5 +50,5 @@ app.get(`/`, (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`🚀 Server is running at http://localhost:${PORT}`);
+    console.log(`Server running at http://localhost:${PORT}`);
 });
