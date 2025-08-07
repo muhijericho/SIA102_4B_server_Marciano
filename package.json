@@ -1,0 +1,16 @@
+{
+  "name": "sai102_server_muhi",
+  "version": "1.0.0",
+  "description": "Server",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Jericho R. Muhi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
